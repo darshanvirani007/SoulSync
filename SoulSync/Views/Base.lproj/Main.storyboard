@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GetStartedVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoulSync" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStartedVC" title="GetStartedVC" id="BYZ-38-t0r" customClass="GetStartedVC" customModule="SoulSync" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoulSync" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw5-Zo-dzp">
-                                <rect key="frame" x="123" y="242" width="168" height="44"/>
+                                <rect key="frame" x="123" y="198" width="168" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="EcH-Zr-i86"/>
                                 </constraints>
@@ -27,11 +27,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ve-5s-nsx">
-                                <rect key="frame" x="89" y="706.5" width="236" height="35.5"/>
+                                <rect key="frame" x="89" y="694" width="236" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fua-NI-pmt"/>
+                                </constraints>
+                                <color key="tintColor" red="0.12941176469999999" green="0.46666666670000001" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Started">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnGetStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8JM-6Q-ez6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +53,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x26-kK-z1H"/>
+                    <connections>
+                        <outlet property="btnGetStarted" destination="5ve-5s-nsx" id="ANE-E3-JdE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,10 +64,9 @@
         <!--Navigation Controller-->
         <scene sceneID="OEu-HB-MG3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cbb-BX-EyX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Cbb-BX-EyX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gcv-gN-hqI">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -13,6 +13,17 @@
 		771EA75E2BBC9CCF00173B72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 771EA75D2BBC9CCF00173B72 /* Base */; };
 		771EA7602BBC9CD000173B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771EA75F2BBC9CD000173B72 /* Assets.xcassets */; };
 		771EA7632BBC9CD000173B72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7622BBC9CD000173B72 /* Base */; };
+		771EA76B2BBC9E0600173B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 771EA76A2BBC9E0600173B72 /* GoogleService-Info.plist */; };
+		771EA7702BBCDB8A00173B72 /* GetStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA76F2BBCDB8A00173B72 /* GetStartedVC.swift */; };
+		771EA7742BBD699900173B72 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA7722BBD699900173B72 /* SignInVC.swift */; };
+		771EA7752BBD699900173B72 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7732BBD699900173B72 /* SignInVC.xib */; };
+		771EA7792BBD6E4600173B72 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA7772BBD6E4600173B72 /* SignUpVC.swift */; };
+		771EA77A2BBD6E4600173B72 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7782BBD6E4600173B72 /* SignUpVC.xib */; };
+		771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */; };
+		771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */; };
+		77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */; };
+		77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */; };
+		E345E6FF1EDF8E1ADB7877A9 /* Pods_SoulSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,19 @@
 		771EA75F2BBC9CD000173B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771EA7622BBC9CD000173B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771EA7642BBC9CD000173B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		771EA76A2BBC9E0600173B72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		771EA76F2BBCDB8A00173B72 /* GetStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedVC.swift; sourceTree = "<group>"; };
+		771EA7722BBD699900173B72 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		771EA7732BBD699900173B72 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		771EA7772BBD6E4600173B72 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		771EA7782BBD6E4600173B72 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordVC.xib; sourceTree = "<group>"; };
+		81E56E2E9A3DDC998A2DA463 /* Pods-SoulSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.release.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.release.xcconfig"; sourceTree = "<group>"; };
+		9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF38B3F8D98E2ADE79610A6 /* Pods-SoulSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.debug.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E345E6FF1EDF8E1ADB7877A9 /* Pods_SoulSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D7DB7A15B7661D684CD759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF38B3F8D98E2ADE79610A6 /* Pods-SoulSync.debug.xcconfig */,
+				81E56E2E9A3DDC998A2DA463 /* Pods-SoulSync.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		771EA74A2BBC9CCF00173B72 = {
 			isa = PBXGroup;
 			children = (
 				771EA7552BBC9CCF00173B72 /* SoulSync */,
 				771EA7542BBC9CCF00173B72 /* Products */,
+				38D7DB7A15B7661D684CD759 /* Pods */,
+				C35E72252319A86F2CDF6249 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +94,87 @@
 			children = (
 				771EA7562BBC9CCF00173B72 /* AppDelegate.swift */,
 				771EA7582BBC9CCF00173B72 /* SceneDelegate.swift */,
-				771EA75A2BBC9CCF00173B72 /* ViewController.swift */,
-				771EA75C2BBC9CCF00173B72 /* Main.storyboard */,
+				771EA76C2BBCD8E600173B72 /* Models */,
+				771EA76D2BBCD8F100173B72 /* Views */,
+				771EA76E2BBCD8F900173B72 /* Controllers */,
+				771EA76A2BBC9E0600173B72 /* GoogleService-Info.plist */,
 				771EA75F2BBC9CD000173B72 /* Assets.xcassets */,
-				771EA7612BBC9CD000173B72 /* LaunchScreen.storyboard */,
 				771EA7642BBC9CD000173B72 /* Info.plist */,
 			);
 			path = SoulSync;
+			sourceTree = "<group>";
+		};
+		771EA76C2BBCD8E600173B72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		771EA76D2BBCD8F100173B72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77CFE7A32BBED3D700FA0F0F /* ReSetPassword */,
+				771EA7802BBD86DC00173B72 /* ForgotPasswordVC */,
+				771EA7762BBD6E2D00173B72 /* SignUpVC */,
+				771EA7712BBCDC9200173B72 /* SignInVC */,
+				771EA75C2BBC9CCF00173B72 /* Main.storyboard */,
+				771EA7612BBC9CD000173B72 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		771EA76E2BBCD8F900173B72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				771EA75A2BBC9CCF00173B72 /* ViewController.swift */,
+				771EA76F2BBCDB8A00173B72 /* GetStartedVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		771EA7712BBCDC9200173B72 /* SignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				771EA7722BBD699900173B72 /* SignInVC.swift */,
+				771EA7732BBD699900173B72 /* SignInVC.xib */,
+			);
+			path = SignInVC;
+			sourceTree = "<group>";
+		};
+		771EA7762BBD6E2D00173B72 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				771EA7772BBD6E4600173B72 /* SignUpVC.swift */,
+				771EA7782BBD6E4600173B72 /* SignUpVC.xib */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		771EA7802BBD86DC00173B72 /* ForgotPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */,
+				771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */,
+			);
+			path = ForgotPasswordVC;
+			sourceTree = "<group>";
+		};
+		77CFE7A32BBED3D700FA0F0F /* ReSetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */,
+				77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */,
+			);
+			path = ReSetPassword;
+			sourceTree = "<group>";
+		};
+		C35E72252319A86F2CDF6249 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771EA7672BBC9CD000173B72 /* Build configuration list for PBXNativeTarget "SoulSync" */;
 			buildPhases = (
+				5CD690F451BFF5D7D37839F9 /* [CP] Check Pods Manifest.lock */,
 				771EA74F2BBC9CCF00173B72 /* Sources */,
 				771EA7502BBC9CCF00173B72 /* Frameworks */,
 				771EA7512BBC9CCF00173B72 /* Resources */,
+				E658F4B5E1D2F4711FA69989 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +237,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771EA77A2BBD6E4600173B72 /* SignUpVC.xib in Resources */,
+				771EA7752BBD699900173B72 /* SignInVC.xib in Resources */,
+				771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */,
+				77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */,
 				771EA7602BBC9CD000173B72 /* Assets.xcassets in Resources */,
+				771EA76B2BBC9E0600173B72 /* GoogleService-Info.plist in Resources */,
 				771EA7632BBC9CD000173B72 /* Base in Resources */,
 				771EA75E2BBC9CCF00173B72 /* Base in Resources */,
 			);
@@ -133,14 +250,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CD690F451BFF5D7D37839F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoulSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E658F4B5E1D2F4711FA69989 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		771EA74F2BBC9CCF00173B72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				771EA75B2BBC9CCF00173B72 /* ViewController.swift in Sources */,
+				771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */,
+				771EA7702BBCDB8A00173B72 /* GetStartedVC.swift in Sources */,
 				771EA7572BBC9CCF00173B72 /* AppDelegate.swift in Sources */,
 				771EA7592BBC9CCF00173B72 /* SceneDelegate.swift in Sources */,
+				771EA7792BBD6E4600173B72 /* SignUpVC.swift in Sources */,
+				771EA7742BBD699900173B72 /* SignInVC.swift in Sources */,
+				77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,18 +451,21 @@
 		};
 		771EA7682BBC9CD000173B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FF38B3F8D98E2ADE79610A6 /* Pods-SoulSync.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoulSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoulSync;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,18 +481,21 @@
 		};
 		771EA7692BBC9CD000173B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E56E2E9A3DDC998A2DA463 /* Pods-SoulSync.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SoulSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoulSync;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

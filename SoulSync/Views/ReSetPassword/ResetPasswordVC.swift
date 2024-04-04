@@ -9,12 +9,29 @@ import UIKit
 
 class ResetPasswordVC: UIViewController {
 
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtConfirmPassword: UITextField!
+    @IBOutlet weak var btnResetPassword: UIButton!
+    @IBOutlet weak var lblErrorMsg: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpElements()
     }
-
+    func setUpElements(){
+        lblErrorMsg.alpha = 0
+        txtPassword.layer.cornerRadius = 15.0
+        txtPassword.layer.masksToBounds = true
+        txtConfirmPassword.layer.cornerRadius = 15.0
+        txtConfirmPassword.layer.masksToBounds = true
+        btnResetPassword.layer.cornerRadius = 15.0
+        btnResetPassword.layer.masksToBounds = true
+    }
+    @IBAction func btnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func btnResetPassword(_ sender: Any) {
+    }
+    
 
     /*
     // MARK: - Navigation
