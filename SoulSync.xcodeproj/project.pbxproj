@@ -21,8 +21,11 @@
 		771EA77A2BBD6E4600173B72 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7782BBD6E4600173B72 /* SignUpVC.xib */; };
 		771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */; };
 		771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */; };
+		7791916A2BC6AD0D006BA931 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779191692BC6AD0D006BA931 /* utilities.swift */; };
 		77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */; };
 		77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */; };
+		77EF5F752BC6CDE8007FCCE1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5F732BC6CDE8007FCCE1 /* HomeVC.swift */; };
+		77EF5F762BC6CDE8007FCCE1 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77EF5F742BC6CDE8007FCCE1 /* HomeVC.xib */; };
 		E345E6FF1EDF8E1ADB7877A9 /* Pods_SoulSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +46,11 @@
 		771EA7782BBD6E4600173B72 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		779191692BC6AD0D006BA931 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordVC.xib; sourceTree = "<group>"; };
+		77EF5F732BC6CDE8007FCCE1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		77EF5F742BC6CDE8007FCCE1 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		81E56E2E9A3DDC998A2DA463 /* Pods-SoulSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.release.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.release.xcconfig"; sourceTree = "<group>"; };
 		9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF38B3F8D98E2ADE79610A6 /* Pods-SoulSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.debug.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		771EA76C2BBCD8E600173B72 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				779191692BC6AD0D006BA931 /* utilities.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,7 +121,8 @@
 		771EA76D2BBCD8F100173B72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				77CFE7A32BBED3D700FA0F0F /* ReSetPassword */,
+				77EF5F722BC6CDCE007FCCE1 /* HomeVC */,
+				77CFE7A32BBED3D700FA0F0F /* ReSetPasswordVC */,
 				771EA7802BBD86DC00173B72 /* ForgotPasswordVC */,
 				771EA7762BBD6E2D00173B72 /* SignUpVC */,
 				771EA7712BBCDC9200173B72 /* SignInVC */,
@@ -160,13 +168,22 @@
 			path = ForgotPasswordVC;
 			sourceTree = "<group>";
 		};
-		77CFE7A32BBED3D700FA0F0F /* ReSetPassword */ = {
+		77CFE7A32BBED3D700FA0F0F /* ReSetPasswordVC */ = {
 			isa = PBXGroup;
 			children = (
 				77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */,
 				77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */,
 			);
-			path = ReSetPassword;
+			path = ReSetPasswordVC;
+			sourceTree = "<group>";
+		};
+		77EF5F722BC6CDCE007FCCE1 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				77EF5F732BC6CDE8007FCCE1 /* HomeVC.swift */,
+				77EF5F742BC6CDE8007FCCE1 /* HomeVC.xib */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 		C35E72252319A86F2CDF6249 /* Frameworks */ = {
@@ -241,6 +258,7 @@
 				771EA7752BBD699900173B72 /* SignInVC.xib in Resources */,
 				771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */,
 				77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */,
+				77EF5F762BC6CDE8007FCCE1 /* HomeVC.xib in Resources */,
 				771EA7602BBC9CD000173B72 /* Assets.xcassets in Resources */,
 				771EA76B2BBC9E0600173B72 /* GoogleService-Info.plist in Resources */,
 				771EA7632BBC9CD000173B72 /* Base in Resources */,
@@ -297,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7791916A2BC6AD0D006BA931 /* utilities.swift in Sources */,
+				77EF5F752BC6CDE8007FCCE1 /* HomeVC.swift in Sources */,
 				771EA75B2BBC9CCF00173B72 /* ViewController.swift in Sources */,
 				771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */,
 				771EA7702BBCDB8A00173B72 /* GetStartedVC.swift in Sources */,

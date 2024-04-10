@@ -16,7 +16,8 @@
                 <outlet property="lblErrorMsg" destination="xnT-qv-TPr" id="I1W-an-pH8"/>
                 <outlet property="txtConfirmPassword" destination="N3b-87-oOX" id="v6A-18-Eqj"/>
                 <outlet property="txtEmail" destination="1Tl-45-zwF" id="xuj-nE-CAk"/>
-                <outlet property="txtFullName" destination="3jQ-JX-D6k" id="EwD-w5-UFr"/>
+                <outlet property="txtFirstName" destination="3jQ-JX-D6k" id="dJZ-tV-Gxt"/>
+                <outlet property="txtLastName" destination="9Va-EP-Sqe" id="E2i-3W-TNV"/>
                 <outlet property="txtMobileNo" destination="hr6-M0-K1k" id="haN-0i-4et"/>
                 <outlet property="txtPassword" destination="nVG-fF-ggt" id="IVs-9X-cIV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -57,9 +58,9 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="efl-R7-TLw">
-                            <rect key="frame" x="40" y="120.00000000000003" width="313" height="456.66666666666674"/>
+                            <rect key="frame" x="40" y="120" width="313" height="530.66666666666663"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jQ-JX-D6k">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jQ-JX-D6k">
                                     <rect key="frame" x="0.0" y="0.0" width="313" height="54"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
@@ -68,8 +69,17 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-45-zwF">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Va-EP-Sqe">
                                     <rect key="frame" x="0.0" y="74" width="313" height="54"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="8he-dM-oIh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-45-zwF">
+                                    <rect key="frame" x="0.0" y="148" width="313" height="54"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="54" id="RvJ-wY-3sR"/>
@@ -78,7 +88,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hr6-M0-K1k">
-                                    <rect key="frame" x="0.0" y="148" width="313" height="54"/>
+                                    <rect key="frame" x="0.0" y="222" width="313" height="54"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="54" id="9bX-Xt-0en"/>
@@ -87,7 +97,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVG-fF-ggt">
-                                    <rect key="frame" x="0.0" y="222" width="313" height="54"/>
+                                    <rect key="frame" x="0.0" y="296" width="313" height="54"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="54" id="IeA-pa-XDk"/>
@@ -96,7 +106,7 @@
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-87-oOX">
-                                    <rect key="frame" x="0.0" y="296" width="313" height="54"/>
+                                    <rect key="frame" x="0.0" y="370" width="313" height="54"/>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="54" id="Oo8-rV-G2x"/>
@@ -105,7 +115,7 @@
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-bc-m1Y">
-                                    <rect key="frame" x="0.0" y="370" width="313" height="48"/>
+                                    <rect key="frame" x="0.0" y="444" width="313" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="ALw-oL-D1I"/>
                                     </constraints>
@@ -119,7 +129,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnT-qv-TPr">
-                                    <rect key="frame" x="0.0" y="438" width="313" height="18.666666666666686"/>
+                                    <rect key="frame" x="0.0" y="512" width="313" height="18.666666666666629"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <color key="textColor" systemColor="systemRedColor"/>
                                     <nil key="highlightedColor"/>
@@ -150,7 +160,7 @@
         </view>
     </objects>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.backward" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
