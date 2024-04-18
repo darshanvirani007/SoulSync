@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInVC: UIViewController {
     
@@ -34,11 +35,60 @@ class SignInVC: UIViewController {
         btnSignUp.layer.cornerRadius = 15.0
         btnSignUp.layer.masksToBounds = true
     }
+    func validateFields()->String?{
+        
+        // check that all fields are filled in
+        
+        if txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields."
+        }
+        
+        // check if email is valid
+        let email = txtEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isEmailValid(email) == false {
+            return "Please enter valid email"
+        }
+    
+        // check if the password is secured
+        let cleanPassword = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isPasswordValid(cleanPassword) == false {
+            return "Please make sure your password is at least 8 characters, contains a special character and a number"
+        }
+        return nil
+    }
+    
+    func showError(_ message:String){
+        lblErrorMsg.text = message
+        lblErrorMsg.alpha = 1
+    }
+    
+    func redirectToHomeScreen(){
+        let homeVC = HomeVC(nibName: "HomeVC", bundle: nil)
+        view.window?.rootViewController = UINavigationController(rootViewController: homeVC)
+        view.window?.rootViewController = navigationController
+        view.window?.makeKeyAndVisible()
+    }
     @objc func labelTapped() {
         let vc = ForgotPasswordVC(nibName: "ForgotPasswordVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    
     @IBAction func btnSignIn(_ sender: Any) {
+        let error = validateFields()
+        if let errorMessage = error {
+            showError(errorMessage)
+        } else {
+            let email = txtEmail.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = txtPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                if error != nil {
+                    self.showError(error?.localizedDescription ?? "error creating user")
+                } else {
+                    self.redirectToHomeScreen()
+                }
+            }
+        }
     }
     @IBAction func btnSignUp(_ sender: Any) {
         let vc = SignUpVC(nibName: "SignUpVC", bundle: nil)

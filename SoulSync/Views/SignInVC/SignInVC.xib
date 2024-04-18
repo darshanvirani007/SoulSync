@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TKq-QJ-nwO">
-                            <rect key="frame" x="40" y="119.99999999999997" width="313" height="341.33333333333326"/>
+                            <rect key="frame" x="40" y="119.99999999999997" width="313" height="381.33333333333326"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iL1-fN-Z73">
                                     <rect key="frame" x="0.0" y="0.0" width="313" height="54"/>
@@ -87,8 +87,15 @@
                                         <action selector="btnSignUp:" destination="-1" eventType="touchUpInside" id="x8a-ub-o5X"/>
                                     </connections>
                                 </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-Gm-9So" customClass="LabelledDivider" customModule="SoulSync" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="322.66666666666669" width="313" height="20"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="pid-fA-pmr"/>
+                                    </constraints>
+                                </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-Hy-cjc">
-                                    <rect key="frame" x="0.0" y="322.66666666666669" width="313" height="18.666666666666686"/>
+                                    <rect key="frame" x="0.0" y="362.66666666666669" width="313" height="18.666666666666686"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <color key="textColor" systemColor="systemRedColor"/>
                                     <nil key="highlightedColor"/>

@@ -62,8 +62,12 @@ class SignUpVC: UIViewController {
             return "Please enter valid mobile number"
         }
         // check if the password is secured
-        let cleanPassword = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        if Utilities.isPasswordValid(cleanPassword) == false {
+        let password = txtPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let confirmPassword = txtConfirmPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        if password != confirmPassword {
+                return "Passwords do not match"
+            }
+        if Utilities.isPasswordValid(password) == false {
             return "Please make sure your password is at least 8 characters, contains a special character and a number"
         }
         return nil
@@ -107,7 +111,6 @@ class SignUpVC: UIViewController {
                     self.redirectToHomeScreen()
                 }
             }
-            //redirect to home screen
         }
     }
     @IBAction func btnBack(_ sender: Any) {
