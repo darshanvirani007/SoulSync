@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
+import FirebaseCore
 
 class SignInVC: UIViewController {
     
@@ -16,6 +18,7 @@ class SignInVC: UIViewController {
     @IBOutlet weak var btnSignIn: UIButton!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var lblErrorMsg: UILabel!
+    @IBOutlet weak var btnGoogleSignIn: UIButton!
     
     
     override func viewDidLoad() {
@@ -34,6 +37,8 @@ class SignInVC: UIViewController {
         btnSignIn.layer.masksToBounds = true
         btnSignUp.layer.cornerRadius = 15.0
         btnSignUp.layer.masksToBounds = true
+        btnGoogleSignIn.layer.cornerRadius = 15.0
+        btnGoogleSignIn.layer.masksToBounds = true
     }
     func validateFields()->String?{
         
@@ -72,8 +77,33 @@ class SignInVC: UIViewController {
         let vc = ForgotPasswordVC(nibName: "ForgotPasswordVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
+
+
+    private func signInToFirebase(withCredential credential: AuthCredential) {
+        Auth.auth().signIn(with: credential) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+
+            if let error = error as NSError? {
+                let errorCode = AuthErrorCode.Code(rawValue: error.code)  // Corrected type casting
+
+                if let errorCode = errorCode {
+                    switch errorCode {
+                    case .emailAlreadyInUse:
+                        // If the email associated with the Google account is already in use
+                        strongSelf.showError("An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address.")
+                    default:
+                        strongSelf.showError(error.localizedDescription)
+                    }
+                } else {
+                    strongSelf.showError("An unknown error occurred")
+                }
+            } else {
+                strongSelf.redirectToHomeScreen()
+            }
+        }
+    }
+
+
     @IBAction func btnSignIn(_ sender: Any) {
         let error = validateFields()
         if let errorMessage = error {
@@ -93,6 +123,26 @@ class SignInVC: UIViewController {
     @IBAction func btnSignUp(_ sender: Any) {
         let vc = SignUpVC(nibName: "SignUpVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func btnGoogleSignIn(_ sender: Any) {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+                let config = GIDConfiguration(clientID: clientID)
+
+                GIDSignIn.sharedInstance.configuration = config
+                GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
+                    guard error == nil else {
+                        showError(error!.localizedDescription)
+                        return
+                    }
+                    
+                    guard let user = result?.user, let idToken = user.idToken?.tokenString else {
+                        showError("Error retrieving Google ID token")
+                        return
+                    }
+                    
+                    let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+                    signInToFirebase(withCredential: credential)
+                }
     }
     /*
      // MARK: - Navigation

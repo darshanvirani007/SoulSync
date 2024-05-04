@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseCore
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,9 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("success")
         }
+        let signInConfig = GIDConfiguration(clientID: "789768779431-ipfcmp2k7oimjlpio1svi8sif5ap28dk.apps.googleusercontent.com")
+        GIDSignIn.sharedInstance.configuration = signInConfig
         return true
     }
 
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

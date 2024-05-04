@@ -11,5 +11,6 @@ target 'SoulSync' do
 	pod 'FirebaseAuth'
 	pod 'FirebaseFirestore'
   pod 'Firebase/Core'
+  pod 'GoogleSignIn'
 
 end
