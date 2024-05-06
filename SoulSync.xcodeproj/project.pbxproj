@@ -20,6 +20,15 @@
 		771EA77A2BBD6E4600173B72 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7782BBD6E4600173B72 /* SignUpVC.xib */; };
 		771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */; };
 		771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */; };
+		772FC63A2BE7E55800C3232B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FC6392BE7E55800C3232B /* MainTabBarController.swift */; };
+		772FC6412BE7E5EF00C3232B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FC63F2BE7E5EF00C3232B /* ProfileVC.swift */; };
+		772FC6422BE7E5F000C3232B /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772FC6402BE7E5EF00C3232B /* ProfileVC.xib */; };
+		772FC6452BE7E60600C3232B /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FC6432BE7E60600C3232B /* AddPostVC.swift */; };
+		772FC6462BE7E60600C3232B /* AddPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772FC6442BE7E60600C3232B /* AddPostVC.xib */; };
+		772FC6492BE7E61800C3232B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FC6472BE7E61800C3232B /* MapVC.swift */; };
+		772FC64A2BE7E61800C3232B /* MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772FC6482BE7E61800C3232B /* MapVC.xib */; };
+		772FC64F2BE7E65D00C3232B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FC64D2BE7E65D00C3232B /* SearchVC.swift */; };
+		772FC6502BE7E65D00C3232B /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772FC64E2BE7E65D00C3232B /* SearchVC.xib */; };
 		7791916A2BC6AD0D006BA931 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779191692BC6AD0D006BA931 /* utilities.swift */; };
 		77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */; };
 		77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */; };
@@ -45,6 +54,15 @@
 		771EA7782BBD6E4600173B72 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		771EA7822BBD871700173B72 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		772FC6392BE7E55800C3232B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		772FC63F2BE7E5EF00C3232B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		772FC6402BE7E5EF00C3232B /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		772FC6432BE7E60600C3232B /* AddPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		772FC6442BE7E60600C3232B /* AddPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPostVC.xib; sourceTree = "<group>"; };
+		772FC6472BE7E61800C3232B /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		772FC6482BE7E61800C3232B /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		772FC64D2BE7E65D00C3232B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		772FC64E2BE7E65D00C3232B /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		779191692BC6AD0D006BA931 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		77CFE7A52BBED40000FA0F0F /* ResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordVC.xib; sourceTree = "<group>"; };
@@ -121,6 +139,10 @@
 		771EA76D2BBCD8F100173B72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				772FC63E2BE7E5A600C3232B /* ProfileVC */,
+				772FC63C2BE7E59200C3232B /* AddPostVC */,
+				772FC63D2BE7E59F00C3232B /* MapVC */,
+				772FC63B2BE7E58400C3232B /* SearchVC */,
 				77EF5F722BC6CDCE007FCCE1 /* HomeVC */,
 				77CFE7A32BBED3D700FA0F0F /* ReSetPasswordVC */,
 				771EA7802BBD86DC00173B72 /* ForgotPasswordVC */,
@@ -137,6 +159,7 @@
 			children = (
 				771EA75A2BBC9CCF00173B72 /* ViewController.swift */,
 				771EA76F2BBCDB8A00173B72 /* GetStartedVC.swift */,
+				772FC6392BE7E55800C3232B /* MainTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +189,42 @@
 				771EA7832BBD871700173B72 /* ForgotPasswordVC.xib */,
 			);
 			path = ForgotPasswordVC;
+			sourceTree = "<group>";
+		};
+		772FC63B2BE7E58400C3232B /* SearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				772FC64D2BE7E65D00C3232B /* SearchVC.swift */,
+				772FC64E2BE7E65D00C3232B /* SearchVC.xib */,
+			);
+			path = SearchVC;
+			sourceTree = "<group>";
+		};
+		772FC63C2BE7E59200C3232B /* AddPostVC */ = {
+			isa = PBXGroup;
+			children = (
+				772FC6432BE7E60600C3232B /* AddPostVC.swift */,
+				772FC6442BE7E60600C3232B /* AddPostVC.xib */,
+			);
+			path = AddPostVC;
+			sourceTree = "<group>";
+		};
+		772FC63D2BE7E59F00C3232B /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				772FC6472BE7E61800C3232B /* MapVC.swift */,
+				772FC6482BE7E61800C3232B /* MapVC.xib */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		772FC63E2BE7E5A600C3232B /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				772FC63F2BE7E5EF00C3232B /* ProfileVC.swift */,
+				772FC6402BE7E5EF00C3232B /* ProfileVC.xib */,
+			);
+			path = ProfileVC;
 			sourceTree = "<group>";
 		};
 		77CFE7A32BBED3D700FA0F0F /* ReSetPasswordVC */ = {
@@ -206,6 +265,7 @@
 				771EA7502BBC9CCF00173B72 /* Frameworks */,
 				771EA7512BBC9CCF00173B72 /* Resources */,
 				E658F4B5E1D2F4711FA69989 /* [CP] Embed Pods Frameworks */,
+				BC3C60C6D3C649DAA5B3F7B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,14 +315,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				771EA77A2BBD6E4600173B72 /* SignUpVC.xib in Resources */,
+				772FC64A2BE7E61800C3232B /* MapVC.xib in Resources */,
 				771EA7752BBD699900173B72 /* SignInVC.xib in Resources */,
 				A0FEE4EE2BE0779100791A33 /* GoogleService-Info.plist in Resources */,
 				771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */,
+				772FC6422BE7E5F000C3232B /* ProfileVC.xib in Resources */,
 				77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */,
 				77EF5F762BC6CDE8007FCCE1 /* HomeVC.xib in Resources */,
 				771EA7602BBC9CD000173B72 /* Assets.xcassets in Resources */,
+				772FC6462BE7E60600C3232B /* AddPostVC.xib in Resources */,
 				771EA7632BBC9CD000173B72 /* Base in Resources */,
 				771EA75E2BBC9CCF00173B72 /* Base in Resources */,
+				772FC6502BE7E65D00C3232B /* SearchVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +355,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC3C60C6D3C649DAA5B3F7B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoulSync/Pods-SoulSync-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E658F4B5E1D2F4711FA69989 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,14 +396,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772FC6412BE7E5EF00C3232B /* ProfileVC.swift in Sources */,
 				7791916A2BC6AD0D006BA931 /* utilities.swift in Sources */,
 				77EF5F752BC6CDE8007FCCE1 /* HomeVC.swift in Sources */,
+				772FC63A2BE7E55800C3232B /* MainTabBarController.swift in Sources */,
+				772FC6452BE7E60600C3232B /* AddPostVC.swift in Sources */,
 				771EA75B2BBC9CCF00173B72 /* ViewController.swift in Sources */,
+				772FC64F2BE7E65D00C3232B /* SearchVC.swift in Sources */,
 				771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */,
 				771EA7702BBCDB8A00173B72 /* GetStartedVC.swift in Sources */,
 				771EA7572BBC9CCF00173B72 /* AppDelegate.swift in Sources */,
 				771EA7592BBC9CCF00173B72 /* SceneDelegate.swift in Sources */,
 				771EA7792BBD6E4600173B72 /* SignUpVC.swift in Sources */,
+				772FC6492BE7E61800C3232B /* MapVC.swift in Sources */,
 				771EA7742BBD699900173B72 /* SignInVC.swift in Sources */,
 				77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */,
 			);

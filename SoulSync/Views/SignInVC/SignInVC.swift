@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 import FirebaseCore
+import FirebaseFirestoreInternal
 
 class SignInVC: UIViewController {
     
@@ -68,9 +69,8 @@ class SignInVC: UIViewController {
     }
     
     func redirectToHomeScreen(){
-        let homeVC = HomeVC(nibName: "HomeVC", bundle: nil)
-        view.window?.rootViewController = UINavigationController(rootViewController: homeVC)
-        view.window?.rootViewController = navigationController
+        let mainTabBarController = MainTabBarController()
+        view.window?.rootViewController = mainTabBarController
         view.window?.makeKeyAndVisible()
     }
     @objc func labelTapped() {
@@ -127,7 +127,7 @@ class SignInVC: UIViewController {
     @IBAction func btnGoogleSignIn(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
                 let config = GIDConfiguration(clientID: clientID)
-
+                
                 GIDSignIn.sharedInstance.configuration = config
                 GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
                     guard error == nil else {
@@ -141,7 +141,23 @@ class SignInVC: UIViewController {
                     }
                     
                     let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
-                    signInToFirebase(withCredential: credential)
+                    
+                    // Check if the user's email exists in the Firestore database
+                    let email = user.profile?.email ?? ""
+                    let db = Firestore.firestore()
+                    db.collection("users").whereField("email", isEqualTo: email).getDocuments { (snapshot, error) in
+                        guard let snapshot = snapshot, error == nil else {
+                            self.showError("Error checking user existence")
+                            return
+                        }
+                        
+                        if snapshot.isEmpty {
+                            self.showError("You need to sign up first")
+                        } else {
+                            // User exists in the database, proceed with signing in
+                            self.signInToFirebase(withCredential: credential)
+                        }
+                    }
                 }
     }
     /*

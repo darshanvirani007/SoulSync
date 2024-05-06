@@ -79,9 +79,8 @@ class SignUpVC: UIViewController {
     }
     
     func redirectToHomeScreen(){
-        let homeVC = HomeVC(nibName: "HomeVC", bundle: nil)
-        view.window?.rootViewController = UINavigationController(rootViewController: homeVC)
-        view.window?.rootViewController = navigationController
+        let mainTabBarController = MainTabBarController()
+        view.window?.rootViewController = mainTabBarController
         view.window?.makeKeyAndVisible()
     }
     
@@ -102,13 +101,25 @@ class SignUpVC: UIViewController {
                     self.showError(err?.localizedDescription ?? "error creating user")
                 } else {
                     let db =  Firestore.firestore()
-                    db.collection("users").addDocument(data: ["uid": result!.user.uid, "first_name": firstName, "last_name": lastName, "email": email, "mobileno": mobileno]) {(error) in
-                        if error != nil {
-                            self.showError("User data coudn't saved in database")
+                    let uid = result!.user.uid // Get the UID of the newly created user
+                    let userData: [String: Any] = [
+                        "first_name": firstName,
+                        "last_name": lastName,
+                        "email": email,
+                        "mobileno": mobileno,
+                        "uid": uid
+                    ]
+
+                    // Specify the UID as the document ID when adding the document to Firestore
+                    db.collection("users").document(uid).setData(userData) { error in
+                        if let error = error {
+                            self.showError("Error saving user data: \(error.localizedDescription)")
+                        } else {
+                            self.redirectToHomeScreen()
+                            // Proceed with further actions, such as navigating to the next screen
                         }
                     }
-                    
-                    self.redirectToHomeScreen()
+
                 }
             }
         }

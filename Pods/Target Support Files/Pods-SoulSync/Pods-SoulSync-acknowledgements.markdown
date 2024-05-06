@@ -3639,6 +3639,10 @@ FirestoreEncoder
 
 Copyright 2022 Google
 
+## GoogleMaps
+
+Copyright 2024 Google LLC
+
 ## GoogleSignIn
 
 
