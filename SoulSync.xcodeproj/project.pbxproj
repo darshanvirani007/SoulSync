@@ -34,6 +34,15 @@
 		77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFE7A42BBED40000FA0F0F /* ResetPasswordVC.swift */; };
 		77EF5F752BC6CDE8007FCCE1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5F732BC6CDE8007FCCE1 /* HomeVC.swift */; };
 		77EF5F762BC6CDE8007FCCE1 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77EF5F742BC6CDE8007FCCE1 /* HomeVC.xib */; };
+		A02D63AA2BEBFC8B0038FDDA /* map_dark_style.json in Resources */ = {isa = PBXBuildFile; fileRef = A02D63A92BEBFC8B0038FDDA /* map_dark_style.json */; };
+		A02D63AC2BEBFCBF0038FDDA /* map_light_style.json in Resources */ = {isa = PBXBuildFile; fileRef = A02D63AB2BEBFCBF0038FDDA /* map_light_style.json */; };
+		A02D63B82BECFA0F0038FDDA /* createGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D63B62BECFA0F0038FDDA /* createGroupVC.swift */; };
+		A02D63B92BECFA0F0038FDDA /* createGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02D63B72BECFA0F0038FDDA /* createGroupVC.xib */; };
+		A02D63BC2BECFA210038FDDA /* createPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D63BA2BECFA210038FDDA /* createPostVC.swift */; };
+		A02D63BD2BECFA210038FDDA /* createPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02D63BB2BECFA210038FDDA /* createPostVC.xib */; };
+		A02D63BF2BED13CD0038FDDA /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D63BE2BED13CD0038FDDA /* post.swift */; };
+		A02D63C12BED14B60038FDDA /* fireStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D63C02BED14B60038FDDA /* fireStoreManager.swift */; };
+		A02D63C32BED1BD50038FDDA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D63C22BED1BD50038FDDA /* AuthManager.swift */; };
 		A0FEE4EE2BE0779100791A33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0FEE4ED2BE0779100791A33 /* GoogleService-Info.plist */; };
 		E345E6FF1EDF8E1ADB7877A9 /* Pods_SoulSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +80,15 @@
 		81E56E2E9A3DDC998A2DA463 /* Pods-SoulSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.release.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.release.xcconfig"; sourceTree = "<group>"; };
 		9948CC7826FC92D0F7828302 /* Pods_SoulSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoulSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF38B3F8D98E2ADE79610A6 /* Pods-SoulSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoulSync.debug.xcconfig"; path = "Target Support Files/Pods-SoulSync/Pods-SoulSync.debug.xcconfig"; sourceTree = "<group>"; };
+		A02D63A92BEBFC8B0038FDDA /* map_dark_style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map_dark_style.json; sourceTree = "<group>"; };
+		A02D63AB2BEBFCBF0038FDDA /* map_light_style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map_light_style.json; sourceTree = "<group>"; };
+		A02D63B62BECFA0F0038FDDA /* createGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createGroupVC.swift; sourceTree = "<group>"; };
+		A02D63B72BECFA0F0038FDDA /* createGroupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = createGroupVC.xib; sourceTree = "<group>"; };
+		A02D63BA2BECFA210038FDDA /* createPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPostVC.swift; sourceTree = "<group>"; };
+		A02D63BB2BECFA210038FDDA /* createPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = createPostVC.xib; sourceTree = "<group>"; };
+		A02D63BE2BED13CD0038FDDA /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
+		A02D63C02BED14B60038FDDA /* fireStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireStoreManager.swift; sourceTree = "<group>"; };
+		A02D63C22BED1BD50038FDDA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		A0FEE4ED2BE0779100791A33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +150,11 @@
 			isa = PBXGroup;
 			children = (
 				779191692BC6AD0D006BA931 /* utilities.swift */,
+				A02D63A92BEBFC8B0038FDDA /* map_dark_style.json */,
+				A02D63AB2BEBFCBF0038FDDA /* map_light_style.json */,
+				A02D63BE2BED13CD0038FDDA /* post.swift */,
+				A02D63C22BED1BD50038FDDA /* AuthManager.swift */,
+				A02D63C02BED14B60038FDDA /* fireStoreManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +226,7 @@
 		772FC63C2BE7E59200C3232B /* AddPostVC */ = {
 			isa = PBXGroup;
 			children = (
+				A02D63AD2BECF9590038FDDA /* addPostController */,
 				772FC6432BE7E60600C3232B /* AddPostVC.swift */,
 				772FC6442BE7E60600C3232B /* AddPostVC.xib */,
 			);
@@ -243,6 +267,17 @@
 				77EF5F742BC6CDE8007FCCE1 /* HomeVC.xib */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		A02D63AD2BECF9590038FDDA /* addPostController */ = {
+			isa = PBXGroup;
+			children = (
+				A02D63B62BECFA0F0038FDDA /* createGroupVC.swift */,
+				A02D63B72BECFA0F0038FDDA /* createGroupVC.xib */,
+				A02D63BA2BECFA210038FDDA /* createPostVC.swift */,
+				A02D63BB2BECFA210038FDDA /* createPostVC.xib */,
+			);
+			path = addPostController;
 			sourceTree = "<group>";
 		};
 		C35E72252319A86F2CDF6249 /* Frameworks */ = {
@@ -319,13 +354,17 @@
 				771EA7752BBD699900173B72 /* SignInVC.xib in Resources */,
 				A0FEE4EE2BE0779100791A33 /* GoogleService-Info.plist in Resources */,
 				771EA7852BBD871700173B72 /* ForgotPasswordVC.xib in Resources */,
+				A02D63AC2BEBFCBF0038FDDA /* map_light_style.json in Resources */,
 				772FC6422BE7E5F000C3232B /* ProfileVC.xib in Resources */,
 				77CFE7A62BBED40000FA0F0F /* ResetPasswordVC.xib in Resources */,
 				77EF5F762BC6CDE8007FCCE1 /* HomeVC.xib in Resources */,
 				771EA7602BBC9CD000173B72 /* Assets.xcassets in Resources */,
 				772FC6462BE7E60600C3232B /* AddPostVC.xib in Resources */,
 				771EA7632BBC9CD000173B72 /* Base in Resources */,
+				A02D63B92BECFA0F0038FDDA /* createGroupVC.xib in Resources */,
+				A02D63BD2BECFA210038FDDA /* createPostVC.xib in Resources */,
 				771EA75E2BBC9CCF00173B72 /* Base in Resources */,
+				A02D63AA2BEBFC8B0038FDDA /* map_dark_style.json in Resources */,
 				772FC6502BE7E65D00C3232B /* SearchVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,13 +441,18 @@
 				772FC63A2BE7E55800C3232B /* MainTabBarController.swift in Sources */,
 				772FC6452BE7E60600C3232B /* AddPostVC.swift in Sources */,
 				771EA75B2BBC9CCF00173B72 /* ViewController.swift in Sources */,
+				A02D63BC2BECFA210038FDDA /* createPostVC.swift in Sources */,
 				772FC64F2BE7E65D00C3232B /* SearchVC.swift in Sources */,
 				771EA7842BBD871700173B72 /* ForgotPasswordVC.swift in Sources */,
+				A02D63C32BED1BD50038FDDA /* AuthManager.swift in Sources */,
+				A02D63B82BECFA0F0038FDDA /* createGroupVC.swift in Sources */,
 				771EA7702BBCDB8A00173B72 /* GetStartedVC.swift in Sources */,
 				771EA7572BBC9CCF00173B72 /* AppDelegate.swift in Sources */,
+				A02D63C12BED14B60038FDDA /* fireStoreManager.swift in Sources */,
 				771EA7592BBC9CCF00173B72 /* SceneDelegate.swift in Sources */,
 				771EA7792BBD6E4600173B72 /* SignUpVC.swift in Sources */,
 				772FC6492BE7E61800C3232B /* MapVC.swift in Sources */,
+				A02D63BF2BED13CD0038FDDA /* post.swift in Sources */,
 				771EA7742BBD699900173B72 /* SignInVC.swift in Sources */,
 				77CFE7A72BBED40000FA0F0F /* ResetPasswordVC.swift in Sources */,
 			);

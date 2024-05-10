@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="SoulSync" customModuleProvider="target">
             <connections>
+                <outlet property="btnMessage" destination="808-vg-Hm4" id="cAM-Ol-Agb"/>
+                <outlet property="btnNotification" destination="SyI-Oj-ZZ6" id="Yrz-iG-v8g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +21,77 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bue-b3-2lG">
-                    <rect key="frame" x="175" y="422" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgN-r6-hsz">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V0T-15-Rzw">
+                            <rect key="frame" x="40" y="0.0" width="333" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoulSync" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-MT-xK8">
+                                    <rect key="frame" x="0.0" y="0.0" width="233" height="30"/>
+                                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                    <color key="textColor" red="0.90588235289999997" green="0.39607843139999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyI-Oj-ZZ6">
+                                    <rect key="frame" x="243" y="0.0" width="40" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="7ku-sg-FlV"/>
+                                        <constraint firstAttribute="width" constant="40" id="im7-mw-vNC"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.90588235289999997" green="0.39607843139999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system"/>
+                                    <connections>
+                                        <action selector="btnNotification:" destination="-1" eventType="touchUpInside" id="uof-rb-aOT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="808-vg-Hm4">
+                                    <rect key="frame" x="293" y="0.0" width="40" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="TyW-Qa-55k"/>
+                                        <constraint firstAttribute="width" constant="40" id="uKn-2F-ACQ"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.90588235289999997" green="0.39607843139999999" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="message.and.waveform" catalog="system"/>
+                                    <connections>
+                                        <action selector="btnMessahe:" destination="-1" eventType="touchUpInside" id="pzE-hD-sXm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-4A-JoB">
+                            <rect key="frame" x="0.0" y="50" width="393" height="689"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Jq7-4A-JoB" secondAttribute="trailing" id="AIH-bM-8yQ"/>
+                        <constraint firstItem="V0T-15-Rzw" firstAttribute="leading" secondItem="mgN-r6-hsz" secondAttribute="leading" constant="40" id="FFY-3Z-fE4"/>
+                        <constraint firstItem="Jq7-4A-JoB" firstAttribute="top" secondItem="V0T-15-Rzw" secondAttribute="bottom" constant="20" id="L5Q-hv-TzW"/>
+                        <constraint firstAttribute="bottom" secondItem="Jq7-4A-JoB" secondAttribute="bottom" constant="20" symbolic="YES" id="WIe-DA-H5u"/>
+                        <constraint firstItem="V0T-15-Rzw" firstAttribute="top" secondItem="mgN-r6-hsz" secondAttribute="top" id="hC0-oN-t0x"/>
+                        <constraint firstItem="Jq7-4A-JoB" firstAttribute="leading" secondItem="mgN-r6-hsz" secondAttribute="leading" id="wnq-13-WqL"/>
+                        <constraint firstAttribute="trailing" secondItem="V0T-15-Rzw" secondAttribute="trailing" constant="20" id="yFv-tQ-3wu"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-363" y="-61"/>
+            <constraints>
+                <constraint firstItem="mgN-r6-hsz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="595-ar-f7Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mgN-r6-hsz" secondAttribute="trailing" id="KNh-Bx-KsL"/>
+                <constraint firstItem="mgN-r6-hsz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cvM-mU-2AM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mgN-r6-hsz" secondAttribute="bottom" id="vAJ-WJ-JcT"/>
+            </constraints>
+            <point key="canvasLocation" x="-1462" y="-378"/>
         </view>
     </objects>
     <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="message.and.waveform" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

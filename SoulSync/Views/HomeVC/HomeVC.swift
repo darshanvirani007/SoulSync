@@ -9,13 +9,19 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var btnNotification: UIButton!
+    @IBOutlet weak var btnMessage: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnNotification(_ sender: Any) {
+    }
+    @IBAction func btnMessahe(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

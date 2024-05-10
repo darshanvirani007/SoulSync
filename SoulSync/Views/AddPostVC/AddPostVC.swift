@@ -8,22 +8,29 @@
 import UIKit
 
 class AddPostVC: UIViewController {
+    @IBOutlet weak var btnAddPost: UIButton!
+    @IBOutlet weak var btnCreateGroup: UIButton!
+    @IBOutlet weak var img_thoughts: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setAdaptiveImage()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setAdaptiveImage() {
+        if self.traitCollection.userInterfaceStyle == .dark {
+            img_thoughts.image = UIImage(named: "img_thoughts_dark")
+        } else {
+            img_thoughts.image = UIImage(named: "img_thoughts")
+        }
     }
-    */
 
+    @IBAction func btnAddPost(_ sender: Any) {
+        let createPostVC = createPostVC(nibName: "createPostVC", bundle: nil)
+        self.present(createPostVC, animated: true, completion: nil)
+    }
+
+    @IBAction func btnCreateGroup(_ sender: Any) {
+        // Your Create Group Action
+    }
 }

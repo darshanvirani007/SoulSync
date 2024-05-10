@@ -40,6 +40,8 @@ class SignInVC: UIViewController {
         btnSignUp.layer.masksToBounds = true
         btnGoogleSignIn.layer.cornerRadius = 15.0
         btnGoogleSignIn.layer.masksToBounds = true
+        btnGoogleSignIn.layer.borderWidth = 2.0
+                btnGoogleSignIn.layer.borderColor = UIColor.black.cgColor
     }
     func validateFields()->String?{
         

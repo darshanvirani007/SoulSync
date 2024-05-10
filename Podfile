@@ -13,5 +13,7 @@ target 'SoulSync' do
   pod 'Firebase/Core'
   pod 'GoogleSignIn'
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'Firebase/Storage'
 
 end
