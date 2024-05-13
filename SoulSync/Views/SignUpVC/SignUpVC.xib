@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="SoulSync" customModuleProvider="target">
             <connections>
                 <outlet property="btnSignUp" destination="YrW-bc-m1Y" id="oO6-K6-lZt"/>
+                <outlet property="btnUploadReport" destination="GcN-hc-e0Q" id="tCI-7h-t6F"/>
                 <outlet property="lblErrorMsg" destination="xnT-qv-TPr" id="I1W-an-pH8"/>
                 <outlet property="txtConfirmPassword" destination="N3b-87-oOX" id="v6A-18-Eqj"/>
                 <outlet property="txtEmail" destination="1Tl-45-zwF" id="xuj-nE-CAk"/>
@@ -58,7 +59,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="efl-R7-TLw">
-                            <rect key="frame" x="40" y="120" width="313" height="530.66666666666663"/>
+                            <rect key="frame" x="40" y="120" width="313" height="598.66666666666663"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jQ-JX-D6k">
                                     <rect key="frame" x="0.0" y="0.0" width="313" height="54"/>
@@ -114,8 +115,23 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-bc-m1Y">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-hc-e0Q">
                                     <rect key="frame" x="0.0" y="444" width="313" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="6Ts-nu-aKm"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" image="square.and.arrow.up" catalog="system" title="Upload Your Report" imagePadding="15">
+                                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="baseBackgroundColor" red="0.89411764709999997" green="0.39607843139999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="btnSignUp:" destination="-1" eventType="touchUpInside" id="ldH-yk-l8w"/>
+                                        <action selector="btnUploadReport:" destination="-1" eventType="touchUpInside" id="r4l-oi-PSs"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrW-bc-m1Y">
+                                    <rect key="frame" x="0.0" y="512" width="313" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="ALw-oL-D1I"/>
                                     </constraints>
@@ -129,7 +145,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnT-qv-TPr">
-                                    <rect key="frame" x="0.0" y="512" width="313" height="18.666666666666629"/>
+                                    <rect key="frame" x="0.0" y="580" width="313" height="18.666666666666629"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <color key="textColor" systemColor="systemRedColor"/>
                                     <nil key="highlightedColor"/>
@@ -160,7 +176,8 @@
         </view>
     </objects>
     <resources>
-        <image name="chevron.backward" catalog="system" width="32" height="32"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

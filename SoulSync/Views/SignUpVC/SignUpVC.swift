@@ -19,6 +19,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var txtConfirmPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var lblErrorMsg: UILabel!
+    @IBOutlet weak var btnUploadReport: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,8 @@ class SignUpVC: UIViewController {
         txtConfirmPassword.layer.masksToBounds = true
         btnSignUp.layer.cornerRadius = 15.0
         btnSignUp.layer.masksToBounds = true
+        btnUploadReport.layer.cornerRadius = 15.0
+        btnUploadReport.layer.masksToBounds = true
     }
     
     func validateFields()->String?{
@@ -128,6 +131,10 @@ class SignUpVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func btnUploadReport(_ sender: Any) {
+        let verifyReportVC = VerifyReportVC(nibName: "VerifyReportVC", bundle: nil)
+        self.present(verifyReportVC, animated: true, completion: nil)
+    }
     
     /*
      // MARK: - Navigation
