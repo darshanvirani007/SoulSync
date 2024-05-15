@@ -815,6 +815,7 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - Alamofire (5.9.1)
   - AppAuth (1.7.4):
     - AppAuth/Core (= 1.7.4)
     - AppAuth/ExternalUserAgent (= 1.7.4)
@@ -1052,6 +1053,7 @@ PODS:
   - RecaptchaInterop (100.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Core
   - Firebase/Storage
   - FirebaseAnalytics
@@ -1064,6 +1066,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
+    - Alamofire
     - AppAuth
     - BoringSSL-GRPC
     - Firebase
@@ -1095,6 +1098,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: ebec4f56469dd7ce9ab08683c0319a68aa0ad86e
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   AppAuth: 182c5b88630569df5acb672720534756c29b3358
   BoringSSL-GRPC: 1e2348957acdbcad360b80a264a90799984b2ba6
   Firebase: cf09623f98ae25a3ad484e23c7e0e5f464152d80
@@ -1124,6 +1128,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: 04d1a0e73a27eaac1aa3d6c6c6911b0e1d58425f
+PODFILE CHECKSUM: 29614880449db0cb99513f172986e6e8464e9f41
 
 COCOAPODS: 1.15.2

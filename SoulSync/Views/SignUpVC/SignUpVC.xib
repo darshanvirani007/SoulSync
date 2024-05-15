@@ -126,7 +126,6 @@
                                         <color key="baseBackgroundColor" red="0.89411764709999997" green="0.39607843139999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </buttonConfiguration>
                                     <connections>
-                                        <action selector="btnSignUp:" destination="-1" eventType="touchUpInside" id="ldH-yk-l8w"/>
                                         <action selector="btnUploadReport:" destination="-1" eventType="touchUpInside" id="r4l-oi-PSs"/>
                                     </connections>
                                 </button>
@@ -172,6 +171,7 @@
                 <constraint firstItem="4ol-nz-pXj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u0a-Bv-9VG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4ol-nz-pXj" secondAttribute="bottom" id="wkz-iC-AYQ"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="127" y="20"/>
         </view>
     </objects>

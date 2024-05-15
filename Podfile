@@ -15,5 +15,7 @@ target 'SoulSync' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Firebase/Storage'
+  pod 'Alamofire'
+
 
 end
