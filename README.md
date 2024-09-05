@@ -1,96 +1,71 @@
 ---
 
-# IBD Symptom Detection Using Machine Learning
+# IBD Symptom Detection - iOS Application
 
 ## Overview
-This project aims to develop a machine learning-based system for classifying medical reports to detect the presence of Inflammatory Bowel Disease (IBD) symptoms. The system leverages natural language processing (NLP) techniques to analyze textual data from medical reports, offering a non-invasive, automated tool to aid in the early diagnosis of IBD.
+This iOS application is part of the IBD Symptom Detection project. The app allows users to upload their medical reports, which are analyzed by a machine learning model to detect the presence of Inflammatory Bowel Disease (IBD) symptoms. Based on the classification results, users can access relevant resources, support groups, or medical specialists directly from the app.
 
-### Key Features:
-- **Machine Learning Models:** Implementation of Linear Support Vector Classifier (SVC), Multinomial Naive Bayes, and Random Forest Classifier to classify medical reports.
-- **Text Preprocessing:** Tokenization, stop words removal, lemmatization, and feature extraction using Term Frequency-Inverse Document Frequency (TF-IDF) vectorization.
-- **Cross-Validation:** Performance evaluation using 10-fold stratified cross-validation.
-- **Web and Mobile Integration:** Developed a web application using Streamlit and a mobile application prototype for iOS, integrated with Firebase.
+## Features
+- **Medical Report Upload:** Users can upload medical reports for analysis.
+- **IBD Symptom Classification:** The app uses a trained machine learning model to classify reports as positive or negative for IBD symptoms.
+- **Firebase Integration:** Secure user authentication and data storage using Firebase.
+- **Recommendations and Resources:** Provides users with tailored recommendations and resources based on their classification results.
 
-## Research Questions
-1. How effective are different machine learning algorithms in classifying medical reports for the presence of IBD symptoms?
-2. What preprocessing and feature extraction techniques yield the highest classification accuracy for IBD symptom detection?
-3. Can a machine learning-based classification system integrated into an application streamline the initial screening process for IBD and improve early diagnosis?
-4. What are the future directions for enhancing the accuracy and applicability of machine learning models in medical report classification for IBD?
+## Prerequisites
+- **Xcode:** Version 11 or later.
+- **iOS:** Version 12.0 or later.
+- **Firebase Account:** A Firebase project set up for iOS integration.
 
-## Research Objectives
-- Develop and implement a machine learning system to classify medical reports for IBD symptom detection.
-- Optimize text preprocessing and feature extraction techniques to enhance classification accuracy.
-- Deploy the best-performing model in a user-friendly application for early IBD screening.
-- Explore future improvements with larger datasets and advanced machine learning methods.
+## Setup and Installation
 
-## Installation
-
-### Prerequisites
-- Python 3.x
-- Libraries: `numpy`, `pandas`, `scikit-learn`, `nltk`, `streamlit`, `firebase-admin`
-
-### Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/IBD-Detection.git
-cd IBD-Detection
+cd IBD-Detection/ios
 ```
 
-### Install Dependencies
-Install the required Python packages using pip:
+### 2. Open the Project in Xcode
+- Open `IBD-Symptom-Detection.xcodeproj` in Xcode.
+
+### 3. Install CocoaPods Dependencies
+If your project uses CocoaPods for Firebase integration, install the necessary pods:
 ```bash
-pip install -r requirements.txt
+pod install
+```
+After this, make sure to open the `.xcworkspace` file in Xcode instead of `.xcodeproj`.
+
+### 4. Firebase Setup
+1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project if you haven't already.
+2. Add an iOS app to your Firebase project. You will need your app's bundle identifier (e.g., `com.yourname.IBDSymptomDetection`).
+3. Download the `GoogleService-Info.plist` file and add it to your Xcode project. Ensure it's included in the app target.
+4. Initialize Firebase in your app by adding the following code to your `AppDelegate.swift`:
+```swift
+import Firebase
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
+}
 ```
 
-### Firebase Setup (for iOS app)
-1. Create a Firebase project on the Firebase Console.
-2. Add your iOS app to the project.
-3. Download the `GoogleService-Info.plist` file and place it in your Xcode project.
-4. Initialize Firebase in your app's code.
-
-### Streamlit Web Application
-To run the web-based interface using Streamlit:
-```bash
-streamlit run app.py
-```
+### 5. Build and Run
+- Connect your iOS device or use a simulator, then build and run the app from Xcode.
 
 ## Usage
 
-### Training the Model
-1. **Preprocess the Data:** Run the preprocessing pipeline to clean and transform the text data.
-2. **Train the Models:** Use the scripts provided to train the LinearSVC, Multinomial Naive Bayes, and Random Forest models.
-3. **Evaluate Performance:** Perform 10-fold stratified cross-validation to evaluate model performance.
-4. **Select the Best Model:** Based on the accuracy scores, select the best-performing model (LinearSVC) for deployment.
+1. **Sign Up/Log In:** Use the Firebase authentication system to sign up or log in.
+2. **Upload Medical Report:** Navigate to the upload section and choose a medical report from your device.
+3. **Classification Results:** The app will analyze the report and classify it as positive or negative for IBD symptoms.
+4. **Recommendations:** Based on the classification, the app will offer recommendations, such as joining support groups, accessing resources, or consulting with a healthcare professional.
 
-### Web Application
-- Upload medical reports via the web application interface.
-- The model will classify the reports as either positive or negative for IBD symptoms.
-- Based on the classification, users will receive recommendations for further action.
-
-### iOS Application
-- Upload medical reports through the mobile app.
-- The app will connect to the Firebase backend to classify the report and provide relevant resources and recommendations.
-
-## Project Structure
-```
-IBD-Detection/
-│
-├── data/                    # Contains medical report datasets
-├── models/                  # Trained models and saved checkpoints
-├── notebooks/               # Jupyter notebooks for experimentation
-├── scripts/                 # Python scripts for preprocessing, training, and evaluation
-├── app.py                   # Streamlit web application script
-├── ios/                     # iOS application source code
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
-```
-
-## Results
-- **Best Model:** Linear Support Vector Classifier (LinearSVC) achieved the highest accuracy in detecting IBD symptoms from medical reports.
-- **Web App Deployment:** A functional web interface allows users to upload and classify medical reports, streamlining the initial screening process for IBD.
-- **Future Work:** The project will be expanded with larger datasets, additional clinical parameters, and more advanced machine learning techniques.
+## Firebase Configuration (Optional)
+If you want to enable additional Firebase features, such as Firestore, Realtime Database, or Analytics, make sure to configure them in your Firebase Console and integrate the necessary SDKs into your project using CocoaPods.
 
 ## Contributing
-Contributions are welcome! If you have suggestions, improvements, or additional features you'd like to see, feel free to fork the repository and create a pull request.
+Contributions to the iOS app are welcome! If you have suggestions for new features or improvements, please fork the repository and create a pull request.
 
 ### Steps to Contribute:
 1. Fork the repository.
@@ -104,7 +79,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For any questions or inquiries, please contact:
-- **Your Name:** Darshan Virani
-- **Email:** darshanvirani2468@gmail.com
+- **Your Name:** darshanvirani2468@gmail.com
+- **Gmail:** darshanvirani2468@gmail.com
 
 ---
