@@ -74,9 +74,6 @@ Contributions to the iOS app are welcome! If you have suggestions for new featur
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 For any questions or inquiries, please contact:
 - **Your Name:** Darshan Virani
