@@ -76,7 +76,7 @@ Contributions to the iOS app are welcome! If you have suggestions for new featur
 
 ## Contact
 For any questions or inquiries, please contact:
-- **Your Name:** Darshan Virani
+- Darshan Virani
 - **Gmail:** darshanvirani2468@gmail.com
 
 ---
